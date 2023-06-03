@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "projectTypes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-type.project-type"
+    },
+    "challengesFaced": {
+      "type": "text"
+    },
+    "learningPoint": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.learning-point"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.links"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.buller-point"
+    }
+  }
+}
