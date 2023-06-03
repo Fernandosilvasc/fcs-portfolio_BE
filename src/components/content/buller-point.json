@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_buller_points",
+  "info": {
+    "displayName": "BullerPoint",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

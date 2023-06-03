@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_learning_points",
+  "info": {
+    "displayName": "LearningPoint"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "topics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.buller-point"
+    }
+  }
+}
