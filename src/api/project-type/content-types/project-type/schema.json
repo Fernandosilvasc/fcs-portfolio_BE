@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_types",
+  "info": {
+    "singularName": "project-type",
+    "pluralName": "project-types",
+    "displayName": "ProjectType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
