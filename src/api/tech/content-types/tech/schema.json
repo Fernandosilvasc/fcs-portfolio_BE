@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "techs",
+  "info": {
+    "singularName": "tech",
+    "pluralName": "techs",
+    "displayName": "Tech"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

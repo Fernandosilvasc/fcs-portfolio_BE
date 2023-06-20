@@ -57,6 +57,16 @@
       "type": "component",
       "repeatable": false,
       "component": "content.buller-point"
+    },
+    "techs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tech.tech"
+    },
+    "tools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tool.tool"
     }
   }
 }
