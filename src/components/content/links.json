@@ -8,7 +8,7 @@
   "attributes": {
     "websiteURL": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": false
     },
     "gitHubURL": {
