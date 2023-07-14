@@ -10,4 +10,9 @@ export default ({ env }) => ({
       salt: env('TRANSFER_TOKEN_SALT'),
     },
   },
+  url: '/dashboard',
+  tutorials: false,
+  notifications: {
+    release: false
+  }
 });
